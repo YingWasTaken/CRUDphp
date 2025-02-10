@@ -1,4 +1,4 @@
 ./docker/mysql
-./app/vendor
-./app/composer.lock
 .idea
+docker/mysql/*.sock
+app/vendor/

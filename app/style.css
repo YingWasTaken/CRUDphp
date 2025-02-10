@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #ff1540;
+    --bg-color: #141313;
+    --text-color: #ffffff;
+    --secondary-color: #810018;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-height: auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-color);
+    background: linear-gradient(90deg, var(--main-color), var(--secondary-color));
+    /*overflow-x: hidden;*/
+    overflow-y: scroll;
+}
+
+
+input[type="text"], input[type="password"], input[type="number"], select{
+    width: 18rem;
+    padding: 10px;
+    margin-bottom:10px;
+    font-size: 1.2rem;
+
+}
+
+/* Clases */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.login{
+    background-color: var(--text-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+    width: 22rem;
+    height: 15rem;
+    max-width: 600px;
+    min-height: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.botones{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.error{
+    color: red;
+    margin: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.importante {
+    margin-top: 20px;
+    color: white;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #ff5d7a;
+    transform: scale(1.1);
+    color:white;
+}
+
+.superior{
+    background-color: var(--text-color);
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+    width: 100%;
+}
+
+.azul {
+    background-color: lightskyblue;
+}
+
+.verde {
+    background-color: rgb(127, 206, 8);
+}
+
+.naranja {
+    background-color: orange;
+}
+
+.violeta {
+    background-color: violet;
+}
+.rojo {
+    background-color: red;
+}
+
+.sitio {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 15rem;
+    margin-bottom: 1rem;
+    width: 40%;
+    height: 10rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.añadir {
+    background-color: #ffffff;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: auto;
+    max-width: 30%;
+    margin: 3rem auto;
+}
+
+.btn-añadir{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;   
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.margen-dere {
+    margin-right: 1rem;
+}
+
+@keyframes pulso {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.seleccione {
+    font-weight: 700;
+    animation: pulso 1.5s infinite ease-in-out;
+}
+
+/* webkit */ 
+body::-webkit-scrollbar {
+    width: 18px;              
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, var(--main-color) 0%, var(--secondary-color) 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 5px;
+}
+
+.btn-agregar {
+    background-color: var(--text-color);
+    color: var(--main-color);
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 10rem; 
+    left: 3rem; 
+}
+
+.btn-agregar:hover {
+    background-color: #ffbdbd;
+}
+
+
+/* TABLAS -> Estos se los pedí a chatgpt y solo cambié los colores, pq estaba ya cansado del css */
+
+
+table {
+    width: auto; /* Ajusta el ancho de la tabla */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 2rem auto; /* Centra la tabla horizontalmente con un margen superior e inferior */
+    border-collapse: separate; /* Cambia a 'separate' para separar las celdas */
+    border-spacing: 15px; /* Espacio entre las celdas de la tabla */
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+    background-color: var(--text-color);
+    border-radius: 15px;
+
+}
+
+th, td {
+    word-wrap: break-word;
+}
+
+th {
+    padding: 15px; /* Más espacio dentro de las celdas */
+    text-align: center; /* Centrado del texto */
+    background-color: var(--main-color); /* Color de fondo para las celdas */
+    color: var(--text-color); /* Color del texto */
+    font-weight: 700; /* Negrita */
+    font-size: 1.4rem; /* Aumento del tamaño de fuente */
+    border-radius: 10px; /* Bordes redondeados para el encabezado */
+}
+
+td {
+    padding: 20px; /* Más espacio dentro de las celdas */
+    background-color: #ffffff; /* Fondo blanco para cada celda */
+    border-radius: 10px; /* Bordes redondeados para las celdas */
+    text-align: center; /* Centrado del texto */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+@media (max-width: 1330px) {
+
+    form{
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 0.4rem;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        
+
+    }
+    .btn::before {
+        content: attr(data-text);
+    }
+
+    .btn-agregar {
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+    h1 {
+        font-size: 2rem; /* Aumenta el tamaño del título en pantallas pequeñas */
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .contenedor, body {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    table {
+        width: 100px; /* Asegura que la tabla ocupe todo el ancho disponible */
+        border-spacing: 10px; /* Reduce el espacio entre celdas */
+    }
+
+    th, td {
+        margin-top: 200px;
+        padding: 0.5rem; /* Reduce el espacio interno de las celdas */
+        font-size: 0.9rem; /* Disminuye el tamaño de fuente */
+        width: 150px;
+        max-width: 100px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    th {
+        font-size: 1rem; /* Tamaño del texto del encabezado un poco más grande que las celdas */
+    }
+
+    tr {
+        width: 100px;
+    }
+
+    td {
+        box-shadow: none; /* Elimina la sombra para simplificar el diseño */
+    }
+
+    /* Si la tabla tiene un contenedor, aseguramos que sea más pequeño */
+    .contenedor {
+        width: 100%; /* Ajusta el ancho del contenedor en pantallas pequeñas */
+    }
+
+    /* Ajusta cualquier botón o contenido relacionado con las tablas */
+    .btn {
+        font-size: 2rem;
+    }
+
+    .seleccione {   
+        display: none;
+    }
+
+    .sitio {
+        height: 200%;
+        width: 80%;
+    }
+
+    .superior {
+        position: fixed;
+        top:0;
+        left:0;
+        font-size: 40px;
+    }
+}
